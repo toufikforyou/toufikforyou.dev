@@ -8,13 +8,26 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Header scroll effect
+// Enhanced Header scroll effect with hero section check
 const header = document.querySelector("header");
+const hero = document.querySelector(".hero");
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
+  const heroHeight = hero.offsetHeight;
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > heroHeight / 6) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
+  }
+});
+
+// Update initial state on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const heroHeight = hero.offsetHeight;
+  if (window.scrollY > heroHeight / 6) {
+    header.classList.add("scrolled");
   }
 });
 
