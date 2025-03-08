@@ -78,7 +78,7 @@ header .logo {
 
 header nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -95,7 +95,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, var(--light) 0%, #ffffff 100%);
