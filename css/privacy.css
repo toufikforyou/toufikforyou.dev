@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #2563eb;
+  --text-color: #374151;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.privacy-container {
+  background-color: var(--card-bg);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--text-color);
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  font-weight: 600;
+}
+
+.app-name {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.effective-date {
+  text-align: center;
+  margin-top: 3rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.third-party-links {
+  list-style: none;
+  padding: 0;
+}
+
+.third-party-links li {
+  margin: 0.5rem 0;
+}
+
+.third-party-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.third-party-links a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  .privacy-container {
+    padding: 1.5rem;
+  }
+}
