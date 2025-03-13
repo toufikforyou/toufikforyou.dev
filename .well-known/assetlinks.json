@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.toufikforyou.colormatching",
+      "sha256_cert_fingerprints": [
+        "B9:0E:0F:92:13:1E:50:2C:27:B1:FF:79:03:A9:A1:E9:DF:0C:A5:74:62:25:6B:A4:BA:A1:BF:07:08:7A:58:FB"
+      ]
+    }
+  }
+]
